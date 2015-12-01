@@ -28,3 +28,18 @@ INSERT INTO kota (propinsi_id, nama_kota) VALUES
 (1,'Kulon Progo'),
 (2,'Klaten'),
 (2,'Magelang');
+
+create table tbl_pegawai(
+    nip int(8) not null PRIMARY KEY,
+    nama varchar(30) not null,
+    alamat varchar(40) NOT NULL,
+    tanggal_lahir date,
+    agama varchar(20)
+);
+
+INSERT INTO tbl_pegawai VALUES
+('1038921','Paijo','Bantul','1998-01-30','Islam'),
+('1038922','Ahmad','Sleman','1993-05-12','Islam'),
+('1038923','Alif Benden Arnado','Klaten','1994-11-13','Islam'),
+('1038924','Akbar Bondan Permana','Tangerang','2000-09-01','Islam'),
+('1038925','Amelia Brenda SP','Tangerang','2005-07-08','Islam');
